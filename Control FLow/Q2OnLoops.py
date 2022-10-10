@@ -9,14 +9,27 @@
 
 # # Q2. Given a variable n, Find if n is prime or not
 
-n = int(input())
+# n = int(input())
 
-if n>1:
-	for i in range(2, int(n/2) + 1):
-		if n % i==0:
-			print("{} is Not Prime".format(n))
-			break
-	else:
-			print("{} is Prime".format(n))
+# if n>1:
+# 	for i in range(2, n):
+# 		if n % i==0:
+# 			print("{} is Not Prime".format(n))
+# 			break
+# 	else:
+# 			print("{} is Prime".format(n))
+# else:
+# 	print(" {} Will be Not Prime")
+
+
+
+num = int(input())
+is_prime = True
+if num>1:
+	for i in range(2, num):
+		if(num % i == 0):
+			is_prime = False
+if(is_prime == True):
+	print("Number {} is Prime".format(num))
 else:
-	print(" {} Will be Not Prime")
+	print("Number {} is Not  Prmt".format(num))
