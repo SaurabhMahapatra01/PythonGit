@@ -18,7 +18,7 @@
 n = int(input())
 for i in range(n):
 	if(i == 5):
-		break
+		continue
 	print(i)
 else:
-	print("No Number")
+	print("No Number Left")
