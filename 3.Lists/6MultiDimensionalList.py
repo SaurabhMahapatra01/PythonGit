@@ -37,5 +37,5 @@ print(e)
 f = [[None, None], [None, None]]
 for i in range(2):
 	for j in range(2):
-		f[i][j] =  b[i][j] //a[i][j]
+		f[i][j] =  b[i][j] /a[i][j]
 print(f)
